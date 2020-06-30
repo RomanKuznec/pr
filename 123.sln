@@ -17,7 +17,11 @@ Global
 		{7D98D8A2-FC85-4BB5-8D1E-95EB46050FD3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
+<<<<<<< HEAD
 		HideSolutionNode = FALSE
+=======
+		HideSolutionNode = false
+>>>>>>> br2
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B47762F-D2F2-46F5-A903-5276257A7EEB}

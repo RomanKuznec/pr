@@ -48,11 +48,19 @@ namespace WindowsFormsApp4
                 fGr = gr;
                 fGod = god;
                 fGroup = group;
+<<<<<<< HEAD
                 
             }
             public override string info()
             {
                 return (string.Format("студент{0}{1}{2}, Дата рождения {3}, средний балл{5}, стипендия{4}, группа{6}", fSome, ' ', fName, fGod.ToString("D"), Convert.ToDouble(GetSum()), Convert.ToDouble(fGr),fGroup));
+=======
+
+            }
+            public override string info()
+            {
+                return (string.Format("студент{0}{1}{2}, Дата рождения {3}, средний балл{5}, стипендия{4}, группа{6}", fSome, ' ', fName, fGod.ToString("D"), Convert.ToDouble(GetSum()), Convert.ToDouble(fGr), fGroup));
+>>>>>>> newbr
             }
             public override double GetSum()
             {
@@ -63,7 +71,11 @@ namespace WindowsFormsApp4
 
             }
         }
+<<<<<<< HEAD
         class TProf:TPerson
+=======
+        class TProf : TPerson
+>>>>>>> newbr
         {
             public String fKat;
             public String fDep;
@@ -98,6 +110,7 @@ namespace WindowsFormsApp4
 
         }
 
+<<<<<<< HEAD
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -126,12 +139,46 @@ namespace WindowsFormsApp4
 
             {
                 resp = new TProf(textBox2.Text, textBox3.Text, Convert.ToInt32(textBox6.Text), textBox4.Text, textBox5.Text);
+=======
+        private void radioButtonGet_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonGet.Checked)
+            {
+                labelDate.Text = "Дата рождения";
+                labelNum.Text = "Номер группы";
+                labelStip.Text = "Стипендия";
+                textBoxP.Text = "";
+                textBoxR.Text = "";
+                textBoxS.Text = "";
+                textBoxN.Text = "";
+                textBoxG.Text = "";
+
+
+            }
+
+        }
+
+        private void buttonGet_Click(object sender, EventArgs e)
+        {
+            if (radioButtonGet.Checked)
+            {
+                resp = new Tstud(textBoxP.Text, textBoxR.Text, Convert.ToInt32(textBoxG.Text), Convert.ToDateTime(textBoxS.Text), 3.6, textBoxN.Text);
+            }
+            if (radioButtonFam.Checked)
+
+            {
+                resp = new TProf(textBoxP.Text, textBoxR.Text, Convert.ToInt32(textBoxG.Text), textBoxS.Text, textBoxN.Text);
+>>>>>>> newbr
             }
 
             textBox1.AppendText(resp.info() + Environment.NewLine);
         }
 
+<<<<<<< HEAD
         private void button2_Click(object sender, EventArgs e)
+=======
+        private void buttonFam_Click(object sender, EventArgs e)
+>>>>>>> newbr
         {
             Close();
         }
@@ -141,6 +188,7 @@ namespace WindowsFormsApp4
 
         }
 
+<<<<<<< HEAD
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton2.Checked)
@@ -158,13 +206,38 @@ namespace WindowsFormsApp4
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+=======
+        private void radioButtonFam_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonFam.Checked)
+
+            {
+                labelDate.Text = "Категория";
+                labelNum.Text = "Название кафедры";
+                labelStip.Text = "Оклад";
+                textBoxP.Text = "";
+                textBoxR.Text = "";
+                textBoxS.Text = "";
+                textBoxN.Text = "";
+                textBoxG.Text = "";
+            }
+        }
+
+        private void textBoxP_TextChanged(object sender, EventArgs e)
+>>>>>>> newbr
         {
 
         }
 
+<<<<<<< HEAD
         private void textBox2_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked == false && radioButton2.Checked == false)
+=======
+        private void textBoxP_Click(object sender, EventArgs e)
+        {
+            if (radioButtonGet.Checked == false && radioButtonFam.Checked == false)
+>>>>>>> newbr
             {
                 MessageBox.Show("Выберите кто вы, преподаватель или студент.");
             }
@@ -172,6 +245,7 @@ namespace WindowsFormsApp4
 
         private void button3_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (radioButton1.Checked)
             {
                 resp = new Tstud(textBox2.Text, textBox3.Text, Convert.ToInt32(textBox6.Text), Convert.ToDateTime(textBox4.Text), 3.6, textBox5.Text);
@@ -180,9 +254,24 @@ namespace WindowsFormsApp4
 
             {
                 resp = new TProf(textBox2.Text, textBox3.Text, Convert.ToInt32(textBox6.Text), textBox4.Text, textBox5.Text);
+=======
+            if (radioButtonGet.Checked)
+            {
+                resp = new Tstud(textBoxP.Text, textBoxR.Text, Convert.ToInt32(textBoxG.Text), Convert.ToDateTime(textBoxS.Text), 3.6, textBoxN.Text);
+            }
+            if (radioButtonFam.Checked)
+
+            {
+                resp = new TProf(textBoxP.Text, textBoxR.Text, Convert.ToInt32(textBoxG.Text), textBoxS.Text, textBoxN.Text);
+
+>>>>>>> newbr
             }
 
             textBox1.AppendText(resp.info() + Environment.NewLine);
         }
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> newbr

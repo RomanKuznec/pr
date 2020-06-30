@@ -49,17 +49,23 @@ namespace WindowsFormsApp4
                 fGod = god;
                 fGroup = group;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
             }
             public override string info()
             {
                 return (string.Format("студент{0}{1}{2}, Дата рождения {3}, средний балл{5}, стипендия{4}, группа{6}", fSome, ' ', fName, fGod.ToString("D"), Convert.ToDouble(GetSum()), Convert.ToDouble(fGr),fGroup));
 =======
+=======
+>>>>>>> newbr
 
             }
             public override string info()
             {
                 return (string.Format("студент{0}{1}{2}, Дата рождения {3}, средний балл{5}, стипендия{4}, группа{6}", fSome, ' ', fName, fGod.ToString("D"), Convert.ToDouble(GetSum()), Convert.ToDouble(fGr), fGroup));
+<<<<<<< HEAD
+>>>>>>> newbr
+=======
 >>>>>>> newbr
             }
             public override double GetSum()
@@ -72,7 +78,11 @@ namespace WindowsFormsApp4
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         class TProf:TPerson
+=======
+        class TProf : TPerson
+>>>>>>> newbr
 =======
         class TProf : TPerson
 >>>>>>> newbr
@@ -111,6 +121,7 @@ namespace WindowsFormsApp4
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -140,6 +151,8 @@ namespace WindowsFormsApp4
             {
                 resp = new TProf(textBox2.Text, textBox3.Text, Convert.ToInt32(textBox6.Text), textBox4.Text, textBox5.Text);
 =======
+=======
+>>>>>>> newbr
         private void radioButtonGet_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButtonGet.Checked)
@@ -168,6 +181,9 @@ namespace WindowsFormsApp4
 
             {
                 resp = new TProf(textBoxP.Text, textBoxR.Text, Convert.ToInt32(textBoxG.Text), textBoxS.Text, textBoxN.Text);
+<<<<<<< HEAD
+>>>>>>> newbr
+=======
 >>>>>>> newbr
             }
 
@@ -175,7 +191,11 @@ namespace WindowsFormsApp4
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void button2_Click(object sender, EventArgs e)
+=======
+        private void buttonFam_Click(object sender, EventArgs e)
+>>>>>>> newbr
 =======
         private void buttonFam_Click(object sender, EventArgs e)
 >>>>>>> newbr
@@ -188,6 +208,7 @@ namespace WindowsFormsApp4
 
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
@@ -207,6 +228,8 @@ namespace WindowsFormsApp4
 
         private void textBox2_TextChanged(object sender, EventArgs e)
 =======
+=======
+>>>>>>> newbr
         private void radioButtonFam_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButtonFam.Checked)
@@ -224,15 +247,24 @@ namespace WindowsFormsApp4
         }
 
         private void textBoxP_TextChanged(object sender, EventArgs e)
+<<<<<<< HEAD
+>>>>>>> newbr
+=======
 >>>>>>> newbr
         {
 
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void textBox2_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked == false && radioButton2.Checked == false)
+=======
+        private void textBoxP_Click(object sender, EventArgs e)
+        {
+            if (radioButtonGet.Checked == false && radioButtonFam.Checked == false)
+>>>>>>> newbr
 =======
         private void textBoxP_Click(object sender, EventArgs e)
         {
@@ -246,6 +278,7 @@ namespace WindowsFormsApp4
         private void button3_Click(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (radioButton1.Checked)
             {
                 resp = new Tstud(textBox2.Text, textBox3.Text, Convert.ToInt32(textBox6.Text), Convert.ToDateTime(textBox4.Text), 3.6, textBox5.Text);
@@ -255,6 +288,8 @@ namespace WindowsFormsApp4
             {
                 resp = new TProf(textBox2.Text, textBox3.Text, Convert.ToInt32(textBox6.Text), textBox4.Text, textBox5.Text);
 =======
+=======
+>>>>>>> newbr
             if (radioButtonGet.Checked)
             {
                 resp = new Tstud(textBoxP.Text, textBoxR.Text, Convert.ToInt32(textBoxG.Text), Convert.ToDateTime(textBoxS.Text), 3.6, textBoxN.Text);
@@ -264,6 +299,9 @@ namespace WindowsFormsApp4
             {
                 resp = new TProf(textBoxP.Text, textBoxR.Text, Convert.ToInt32(textBoxG.Text), textBoxS.Text, textBoxN.Text);
 
+<<<<<<< HEAD
+>>>>>>> newbr
+=======
 >>>>>>> newbr
             }
 
@@ -272,6 +310,10 @@ namespace WindowsFormsApp4
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> newbr
 =======
 
 >>>>>>> newbr
